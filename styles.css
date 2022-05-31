@@ -1,0 +1,294 @@
+.border{
+    border: 3px solid;
+}
+body {
+    font-family: 'Koulen', cursive;
+}
+
+.header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(211, 124, 37);
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    border: 3PX solid;
+
+}
+
+.header__logo {
+    display: flex;
+
+}
+
+.header__titulo {
+    display: flex;
+    padding-left: 15px;
+
+}
+
+/* HASTA ACA SE TRABAJA EL ESTILO DEL HEADER (LOGO Y TITULO)*/
+
+.nav {
+
+    background-color: rgb(238, 95, 84);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 25px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+    border: 5PX solid;
+}
+
+/* ESTILO DE NAVEGACION*/
+
+
+
+
+.section {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 300px;
+    border: 2px solid;
+    background-color: grey;
+    padding-top: 5px;
+    margin-top: 30px;
+
+}
+
+.section__titulo {
+
+    margin: 10px 20px 20px 10px;
+}
+
+.section__contenido {
+
+    display: flex;
+    flex-direction: column;
+    margin-bot: 70px;
+    padding-left: 20px;
+    padding-right: 5px;
+    margin-top: 70px;
+
+
+}
+
+
+.section__imagen {
+    width: 500px;
+    margin: 20px 10px 15px 20px
+   
+}
+
+
+
+/* ESTILO DEL CONTENIDO DE LA PAGINA TITULO PARRAFO E IMAGEN*/
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 4px solid;
+    background-color: rgb(211, 124, 37);
+    margin-top:20px
+
+}
+
+
+.footer__titulo {
+    display: flex;
+
+}
+
+.footer__redes {
+    padding-top: 20px;
+}
+
+/*ESTILO DEL FOOTER */
+
+
+
+
+
+
+#grilla {
+
+    height: 100%;
+    display: grid;
+    grid-template-rows: 15% 10% 65% auto;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "header header"
+                          "nav nav "
+                           "section section"
+                          "footer footer";
+}
+
+/*GRILLA GENERAL DE LA PAGINA */
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+
+
+section {
+    grid-area: section;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+/*ASIGNACION DE LOS ELEMENTOS DE LA GRILLA*/
+
+
+
+/*PRIMER INTENTO VERSION MOBILE*/
+@media screen and (max-width:380px){
+
+   #grilla{
+    
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                          "nav"
+                           "section"
+                          "footer";
+       
+
+   }
+ 
+
+   .header {
+
+    display: flex;
+    flex-direction: row;
+    
+    align-items: flex-start;
+    width: 340px;
+    height: 95px;
+    background-color: rgb(211, 124, 37);
+    padding-top: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 1px;
+
+    
+    border: 3PX solid;
+
+  }
+
+  .header__logo {
+    display: flex;
+    height: 75px;
+
+
+ }
+
+ .header__titulo {
+    display: flex;
+    padding-left: 15px;
+    justify-content: flex-start;
+
+
+ }
+
+
+
+
+  .nav {
+
+    background-color: rgb(238, 95, 84);
+    display: flex;
+    flex-direction:row;
+    justify-content: ;
+    width: 340px;
+    height: 20px;
+    margin-top: 30px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    margin-top: 50px;
+    border: 2PX solid;
+ }
+
+ .section {
+    width: 340px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 300px;
+    border: 2px solid;
+    background-color: grey;
+    padding-top: 5px;
+    margin-top: 70px;
+
+ }
+
+ .section__contenido {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+ }
+
+
+    .section__imagen {
+    width: 310px;
+    margin-bottom: 10px;
+    justify-content: center;
+    
+   
+ }
+
+ .footer {
+    width: 340px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid;
+    background-color: rgb(211, 124, 37);
+    margin-bottom:1px ;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+ }
+
+
+ .footer__titulo {
+    display: flex;
+
+ }
+
+ .footer__redes {
+    padding-top: 20px;
+ }
+
+
+
+
+}
+    
+      
